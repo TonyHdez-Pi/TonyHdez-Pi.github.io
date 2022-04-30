@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 15px;
+    font-family: var(--lexendFont);
 }
 :root{
     --mainBackground:  hsl(233, 47%, 7%);
@@ -41,4 +42,69 @@ main{
     background-image: url(images/image-header-mobile.jpg);
     box-shadow: inset 0 0 0 1000px var(--accent);
     background-size: cover;
+}
+.card__headlight{
+    padding: 1rem 0;
+    font-size: 2rem;
+    width: 80%;
+}
+.card__span {
+    font-size: inherit;
+    color: hsl(277, 64%, 61%);
+}
+.card_paragraph{
+    width: 90%;
+    padding: 1rem 1rem;
+    line-height: 1.7rem;
+    color: var(--transpWhite);
+}
+.card__stats{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.card__stats p{
+    font-size: 1.8rem;
+    font-family: var(--interFont);
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+.card__stats span{
+    display: block;
+    margin: .5rem 0;
+    color: var(--semiTranspWhite);
+    text-transform: uppercase;
+}
+@media screen and (max-width: 2100px){
+    .card{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .card{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 810px) {
+    .card{
+        width: 45%;
+    }
+    .card__headlight{
+        margin: 2rem 0;
+    }    
+    .card__stats p{
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card{
+        width: 80%;
+    }
+    .card__headlight{
+        margin: 1.5rem 0;
+    }    
+    .card__stats p{
+        margin: 1rem 0;
+    }
 }
