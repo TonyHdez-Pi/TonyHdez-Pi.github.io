@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+:root{
+    --mainBackground:  hsl(233, 47%, 7%);
+    --cardBackground: hsl(244, 38%, 16%);
+    --accent: hsla(277, 62%, 36%, 0.609);
+    --transpWhite: hsla(0, 0%, 100%, 0.75);
+    --semiTranspWhite: hsla(0, 0%, 100%, 0.6);
+    --interFont : 'Inter', sans-serif;
+    --lexendFont: 'Lexend Deca', sans-serif;
+}
+main{
+    background-color: var(--mainBackground);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+.card{
+    background-color: var(--cardBackground);
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: .5rem;
+    text-align: center;
+}
+.card__image{
+    width: 100%;
+    height: 30%;
+    border-radius: .5rem .5rem 0 0;
+    background-image: url(images/image-header-mobile.jpg);
+    box-shadow: inset 0 0 0 1000px var(--accent);
+    background-size: cover;
+}
